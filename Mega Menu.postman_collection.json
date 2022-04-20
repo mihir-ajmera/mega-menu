@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "8513d0a3-fe4b-4916-81a3-afd4fa004535",
+		"name": "Mega Menu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Menus Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5008/api/menus/get-all-menus-items/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5008",
+					"path": [
+						"api",
+						"menus",
+						"get-all-menus-items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Root Menus Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5008/api/menus/get-all-root-menus-items/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5008",
+					"path": [
+						"api",
+						"menus",
+						"get-all-root-menus-items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Leaf Menus Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5008/api/menus/get-all-leaf-menus-items/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5008",
+					"path": [
+						"api",
+						"menus",
+						"get-all-leaf-menus-items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Menu Item by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5008/api/menus/get-menu-items-by-name/1/test",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5008",
+					"path": [
+						"api",
+						"menus",
+						"get-menu-items-by-name",
+						"1",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Menu Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"menuId\":1, \"parentId\": 3, \"name\":\"Fridge\", \"url\": null, \"isOpenNewTab\": false}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5008/api/menus/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5008",
+					"path": [
+						"api",
+						"menus",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
